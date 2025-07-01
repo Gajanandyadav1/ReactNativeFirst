@@ -1,18 +1,19 @@
-import { Link } from "expo-router";
-import { Text, View } from "react-native";
+  
+import MyButton from "@/app-example/components/MyButton";
+import { useRouter } from "expo-router";
+import { View } from "react-native";
 
 export default function Index() {
+
+
+  const router = useRouter()
+  const ClickToMove = ()=>{
+    
+    router.navigate('./login')
+  }
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor:'red'
-      }}
-    >
-      <Text style={{color:'white', fontWeight:'800'}}> This is Home Page</Text>
-     <Link href="/about">  <Text>About Page</Text></Link>
+    <View  style={{flex:1, justifyContent:'center',alignItems:'center'}}>
+      <MyButton title={"Mybtn"} onPress={ClickToMove}/>
     </View>
   );
 }
