@@ -1,12 +1,30 @@
-import {   Text, View } from 'react-native'
+import {   StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import MyButton from '@/app-example/components/MyButton'
+import { useRouter } from 'expo-router'
 
 const Signup = () => {
+    const router = useRouter()
+    const Register =()=>{
+        router.navigate('/login')
+    }
+
+   
+    
+
   return (
-    <View>
-      <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam odit quo quod voluptate dolor esse illo officiis,  </Text>
+  <View style={styles.container}>
+    <MyButton title={'Register'} onPress={Register} />
     </View>
   )
 } 
 export default Signup
+
+const styles = StyleSheet.create({
+    container:{
+    flex:1,
+    justifyContent:'center', alignItems:'center',
+    color:'red'
+  },
+})
  
