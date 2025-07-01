@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const Home = () => {
+const login = () => {
   return (
     <View>
-      <Text>index Page Drawer navigation</Text>
+      <Text> login </Text>
     </View>
   )
 }
 
-export default Home
+export default login
