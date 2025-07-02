@@ -16,7 +16,7 @@ const Login = () => {
    
       {/* <Image source={require("@/assets/images/Login.jpeg")}/> */}
       <Image source={require('../assets/images/Login.jpeg')}  style={styles.images}/>
-    <MyButton title={'Login Page'} onPress={LoginPress} />
+    <MyButton title={'Login '} onPress={LoginPress} />
     </View>
   )
 }
