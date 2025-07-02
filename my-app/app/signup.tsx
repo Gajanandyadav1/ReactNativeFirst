@@ -14,7 +14,7 @@ const Signup = () => {
 
   return (
   <View style={styles.container}>
-    <MyButton title={'Register'} onPress={Register} />
+    <MyButton title={'Register Page'} onPress={Register} />
     </View>
   )
 } 
