@@ -13,9 +13,8 @@ const Login = () => {
 
   return (
     <View style={styles.container}>
-   
-      {/* <Image source={require("@/assets/images/Login.jpeg")}/> */}
-      <Image source={require('../assets/images/Login.jpeg')}  style={styles.images}/>
+    
+      <Image source={require('../assets/images/Login.jpeg')} style={styles.images}/>
     <MyButton title={'Login '} onPress={LoginPress} />
     </View>
   )
