@@ -9,6 +9,7 @@ const Signup = () => {
         router.navigate('/login')
     }
  
+    
   return (
   <View style={styles.container}>
     <MyButton title={'Register Page '} onPress={Register} />
