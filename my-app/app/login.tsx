@@ -1,4 +1,4 @@
-import { StyleSheet,View, Text } from 'react-native'
+import { StyleSheet,View, Text, TextInput } from 'react-native'
 import React from 'react'
 import MyButton from '@/app-example/components/MyButton'
 import { useRouter } from 'expo-router'
@@ -15,6 +15,11 @@ const Login = () => {
     <View style={styles.container}>
     
       <Image source={require('../assets/images/Login.jpeg')} style={styles.images}/>
+
+
+      <TextInput placeholder='Enter Name' style={{borderWidth:1,height:50,paddingHorizontal:20, width:'80%', marginVertical:20, borderRadius:12}} onChangeText={(e)=> console.log(e)}/>
+
+      <TextInput placeholder='Enter Password'  style={{borderWidth:1,height:50, paddingHorizontal:20,width:'80%', marginVertical:20, borderRadius:12}}/>
     <MyButton title={'Login '} onPress={LoginPress} />
     </View>
   )
