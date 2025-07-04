@@ -24,7 +24,7 @@ const Signup = () => {
     
           <TextInput placeholder='Enter Password'  style={{borderWidth:1,height:50, paddingHorizontal:20,width:'90%', marginVertical:10, borderRadius:12}}/>
     
-          <TextInput placeholder='Enter Address'  style={{borderWidth:1,height:50, paddingHorizontal:20,width:'90%', marginVertical:10, borderRadius:12}}/>
+          <TextInput placeholder='Enter Address '  style={{borderWidth:1,height:50, paddingHorizontal:20,width:'90%', marginVertical:10, borderRadius:12}}/>
 
     <MyButton title={'Register Page '} onPress={Register} />
     </View>
