@@ -7,10 +7,11 @@ import { Image } from 'expo-image'
 const Login = () => {
 
   const [value, setValue] = useState('');
+  const [value1, setValue1] = useState('');
   const router = useRouter()
   const LoginPress =  ()=>{
    router.navigate('/signup')
-   console.log(value)
+   console.log(value, value1)
   }
 
   return (
@@ -20,8 +21,9 @@ const Login = () => {
 
       <TextInput placeholder='Enter Name' style={{borderWidth:1,height:50,paddingHorizontal:20, width:'80%', marginVertical:20, borderRadius:12}} onChangeText={(e)=> setValue(e)}/>
 
-      <TextInput placeholder='Enter Password'  style={{borderWidth:1,height:50, paddingHorizontal:20,width:'80%', marginVertical:20, borderRadius:12}}/>
+      <TextInput placeholder='Enter Password'  style={{borderWidth:1,height:50, paddingHorizontal:20,width:'80%', marginVertical:20, borderRadius:12}} onChangeText={(e)=>setValue1(e)}/>
     <MyButton title={'Login '} onPress={LoginPress} />
+    
     </View>
   )
 }
