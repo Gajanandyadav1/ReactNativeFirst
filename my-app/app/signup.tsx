@@ -8,14 +8,10 @@ const Signup = () => {
     const Register =()=>{
         router.navigate('/login')
     } 
-
   return (
-  <View style={styles.container}>
-
-
+  <View style={styles.container}> 
      <Image source={require('../assets/images/Login.jpeg')} resizeMode='contain' style={styles.images}/>
-    
-    
+
           <TextInput placeholder='Enter Name' style={{borderWidth:1,height:50,paddingHorizontal:20, width:'90%', marginVertical:10, borderRadius:12}} onChangeText={(e)=> console.log(e)}/>
     
           <TextInput placeholder='Enter Email'  style={{borderWidth:1,height:50, paddingHorizontal:20,width:'90%', marginVertical:10, borderRadius:12}}/>
