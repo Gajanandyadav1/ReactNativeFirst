@@ -16,12 +16,13 @@ const Login = () => {
 
   return (
     <View style={styles.container}>
+
     
       <Image source={require('../assets/images/Login.jpeg')} style={styles.images}/>
 
-      <TextInput placeholder='Enter Name' style={{borderWidth:1,height:50,paddingHorizontal:20, width:'80%', marginVertical:20, borderRadius:12}} onChangeText={(e)=> setValue(e)}/>
+      <TextInput placeholder='Enter your Name' style={{borderWidth:1,height:50,paddingHorizontal:20, width:'80%', marginVertical:20, borderRadius:12}} onChangeText={(e)=> setValue(e)}/>
 
-      <TextInput placeholder='Enter Password'  style={{borderWidth:1,height:50, paddingHorizontal:20,width:'80%', marginVertical:20, borderRadius:12}} onChangeText={(e)=>setValue1(e)}/>
+      <TextInput placeholder='Enter your Password'  style={{borderWidth:1,height:50, paddingHorizontal:20,width:'80%', marginVertical:20, borderRadius:12}} onChangeText={(e)=>setValue1(e)}/>
     <Mybutton title={'Login '} onPress={LoginPress}  />
 
     </View>

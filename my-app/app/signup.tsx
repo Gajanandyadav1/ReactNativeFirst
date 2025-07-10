@@ -13,6 +13,7 @@ const Signup = () => {
 
   const handleChange = (text: string) => {
     // Sirf 0-9 digits allow kare, baaki hata de
+
     const onlyNumbers = text.replace(/[^0-9]/g, '');
     setValue(onlyNumbers);
   };
@@ -22,9 +23,8 @@ const Signup = () => {
 
           <TextInput placeholder='Enter Name' style={{borderWidth:1,height:50,paddingHorizontal:20, width:'90%', marginVertical:10, borderRadius:12}} onChangeText={(e)=> console.log(e)}/>
     
-          <TextInput placeholder='Enter Email'  style={{borderWidth:1,height:50, paddingHorizontal:20,width:'90%', marginVertical:10, borderRadius:12}} onChangeText={(e)=>console.log(e)}/>
+          <TextInput placeholder='Enter Email' style={{borderWidth:1,height:50, paddingHorizontal:20,width:'90%', marginVertical:10, borderRadius:12}} onChangeText={(e)=>console.log(e)}/>
  
-    
           <TextInput
         placeholder="Enter Number"
         keyboardType="numeric"
