@@ -1,8 +1,8 @@
 import { StyleSheet,View, Text, TextInput } from 'react-native'
-import React, { useState } from 'react'
-import MyButton from '@/app-example/components/MyButton'
+import React, { useState } from 'react' 
 import { useRouter } from 'expo-router'
 import { Image } from 'expo-image'
+import Mybutton from '@/components/Mybutton'
 
 const Login = () => {
 
@@ -22,7 +22,7 @@ const Login = () => {
       <TextInput placeholder='Enter Name' style={{borderWidth:1,height:50,paddingHorizontal:20, width:'80%', marginVertical:20, borderRadius:12}} onChangeText={(e)=> setValue(e)}/>
 
       <TextInput placeholder='Enter Password'  style={{borderWidth:1,height:50, paddingHorizontal:20,width:'80%', marginVertical:20, borderRadius:12}} onChangeText={(e)=>setValue1(e)}/>
-    <MyButton title={'Login '} onPress={LoginPress}  />
+    <Mybutton title={'Login '} onPress={LoginPress}  />
 
     </View>
   )

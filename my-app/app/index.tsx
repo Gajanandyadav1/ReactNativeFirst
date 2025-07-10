@@ -1,6 +1,6 @@
   
-
-import MyButton from "@/app-example/components/MyButton";
+  
+import Mybutton from "@/components/Mybutton";
 import { useRouter } from "expo-router";
 import { View } from "react-native";
 
@@ -14,7 +14,7 @@ export default function Index() {
   }
   return (
     <View  style={{flex:1, justifyContent:'center',alignItems:'center'}}>
-      <MyButton title={"Mybtn"} onPress={ClickToMove}/>
+      <Mybutton title={"Mybtn"} onPress={ClickToMove} />
     </View>
   );
 }
