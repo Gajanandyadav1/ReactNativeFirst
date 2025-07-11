@@ -25,9 +25,7 @@ const Signup = () => {
     
           <TextInput placeholder='Enter Email' style={{borderWidth:1,height:50, paddingHorizontal:20,width:'90%', marginVertical:10, borderRadius:12}} onChangeText={(e)=>console.log(e)}/>
  
-          <TextInput
-        placeholder="Enter Number"
-        keyboardType="numeric"
+          <TextInput  placeholder="Enter Number"   keyboardType="numeric"
         value={value}
         onChangeText={handleChange} maxLength={10}
         style={{
