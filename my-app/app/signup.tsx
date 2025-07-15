@@ -74,19 +74,22 @@ const Signup = () => {
   )}
 /> */}
 
-<FlatList  
-data={[1,2,3,1,2,3,1,2,3,1,2,3,1,2]}
-numColumns={3}
-renderItem={({item})=>{
-  return(
-    <View  style={{width:100, height:100, backgroundColor:'green', margin:12, justifyContent:'center',  alignItems:'center'  }}>
+    <FlatList 
+      data={[1,2,3,4,5,6,7,8,9,10]}
+      contentContainerStyle={{marginTop:40}}
+      numColumns={3}
+    renderItem={({item})=>{
+      return(
+        <View style={{backgroundColor:'red',  width:100, height:100, margin:12, borderRadius:12, justifyContent:'center', alignItems:'center'}}>
 
-<Text>{item}</Text>
-    </View>
-  )
-}}
-
-/>
+<Text style={{color:'white', textAlign:'center',}}>{item}</Text>
+        </View>
+      )
+    }}
+    
+    
+    
+    />
 
          </ScrollView>
   )
