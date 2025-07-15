@@ -79,7 +79,7 @@ data={[1,2,3,1,2,3,1,2,3,1,2,3,1,2]}
 numColumns={3}
 renderItem={({item})=>{
   return(
-    <View  style={{width:100, height:100, backgroundColor:'green', margin:12, justifyContent:'center', alignItems:'center'  }}>
+    <View  style={{width:100, height:100, backgroundColor:'green', margin:12, justifyContent:'center',  alignItems:'center'  }}>
 
 <Text>{item}</Text>
     </View>
