@@ -4,9 +4,8 @@ import Mybutton from "@/components/Mybutton";
 import { useRouter } from "expo-router";
 import { View } from "react-native";
 
-export default function Index() {
-
-
+export default function Index() { 
+  
   const router = useRouter()
   const ClickToMove = ()=>{
     
