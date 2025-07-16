@@ -42,10 +42,7 @@ const [open, setOpen] = useState(false);
         <View style={styles.modal}>
           <Text style={styles.title}>Hello  Gajanand Yadav 👋</Text>
           <Button title="Close" onPress={() => setOpen(false)} />
-        </View>
-
-
-        
+        </View> 
       </Modal>
     </View>
 

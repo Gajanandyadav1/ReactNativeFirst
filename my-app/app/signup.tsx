@@ -82,7 +82,9 @@ const Signup = () => {
       return(
         <View style={{backgroundColor:'red',  width:100, height:100, margin:12, borderRadius:12, justifyContent:'center', alignItems:'center'}}>
 
-<Text style={{color:'white', textAlign:'center',}}>{item}</Text>
+          <Text style={{color:'white', textAlign:'center',}}>{item}</Text>
+
+
         </View>
       )
     }}
