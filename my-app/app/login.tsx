@@ -23,14 +23,14 @@ const [open, setOpen] = useState(false);
     Poppins_300Light
   })  
   console.log(loaded)
-
-
-
+ 
      useEffect(() => {
     if (loaded) {
       SplashScreen.hideAsync();
     }
   }, [loaded, error]);
+
+   
   return (
     <View style={styles.container}> 
       <Image source={require('../assets/images/Login.jpeg')} style={styles.images} />
