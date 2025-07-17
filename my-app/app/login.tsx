@@ -1,10 +1,11 @@
 import { StyleSheet,View, Text, TextInput, Button, Pressable } from 'react-native'
 import Modal from 'react-native-modal';
-import React, { useState } from 'react' 
+import React, { useEffect, useState } from 'react' 
 import { useRouter } from 'expo-router'
 import { Image } from 'expo-image'
+import {Poppins_300Light, Poppins_600SemiBold_Italic, useFonts} from '@expo-google-fonts/poppins'
 import Mybutton from '@/components/Mybutton'
-
+import * as SplashScreen from 'expo-splash-screen';
 const Login = () => {
   const [modalVisible, setModalVisible] = useState(false);
 const [open, setOpen] = useState(false);
@@ -16,6 +17,20 @@ const [open, setOpen] = useState(false);
    console.log(value, value1)
   }
 
+
+  const [loaded, error] = useFonts({
+    Poppins_600SemiBold_Italic,
+    Poppins_300Light
+  })  
+  console.log(loaded)
+
+
+
+     useEffect(() => {
+    if (loaded) {
+      SplashScreen.hideAsync();
+    }
+  }, [loaded, error]);
   return (
     <View style={styles.container}> 
       <Image source={require('../assets/images/Login.jpeg')} style={styles.images} />
@@ -66,7 +81,7 @@ const styles = StyleSheet.create({
   },
   box:   { flex: 1, justifyContent: 'center', alignItems: 'center' },
   modal: { backgroundColor: '#fff', padding: 20, borderRadius: 10 },
-  title: { fontSize: 18, marginBottom: 12, textAlign: 'center' },
+  title: { fontSize: 18, marginBottom: 12, textAlign: 'center' , fontFamily:'Poppins_600SemiBold_Italic'},
   container2:{marginTop:50},
   button2: {
     backgroundColor: 'red',
