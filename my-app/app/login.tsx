@@ -40,9 +40,7 @@ const [open, setOpen] = useState(false);
       <TextInput placeholder='Enter your Password'  style={{borderWidth:1,height:50, paddingHorizontal:20,width:'80%', marginVertical:20, borderRadius:12}} onChangeText={(e)=>setValue1(e)}/>
     <Mybutton title={'Login '} onPress={LoginPress}  />
 
-     <View style={styles.container2}>
-       
-
+     <View style={styles.container2}> 
       <Pressable style={styles.button2} onPress={() => setOpen(true)}>
   <Text style={styles.btnTxt}>Open Modal</Text>
 </Pressable>
