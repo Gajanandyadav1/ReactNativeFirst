@@ -92,7 +92,7 @@ const Signup = () => {
       }}>
         <Text style={{color: 'white', textAlign: 'center'}}>{item}</Text>
 
-        {/* Blue View inside red box */}
+       
        
       </View>
     )
