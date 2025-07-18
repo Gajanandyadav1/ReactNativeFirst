@@ -90,10 +90,7 @@ const Signup = () => {
         justifyContent: 'center',
         alignItems: 'center'
       }}>
-        <Text style={{color: 'white', textAlign: 'center'}}>{item}</Text>
-
-       
-       
+        <Text style={{color: 'white', textAlign: 'center'}}>{item}</Text>       
       </View>
     )
   }}
