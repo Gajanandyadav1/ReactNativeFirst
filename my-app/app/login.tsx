@@ -48,12 +48,12 @@ const [open, setOpen] = useState(false);
 
       <Modal
         isVisible={open}
-        onBackdropPress={() => setOpen(false)}   // बाहर tap से बंद
+        onBackdropPress={() => setOpen(false)}   
         animationIn="slideInUp"
         animationOut="slideOutDown"
       >
         <View style={styles.modal}>
-          <Text style={styles.title}>Hello  Gajanand Yadav 👋</Text>
+          <Text style={styles.title}>Hello  Gajju  👋</Text>
           <Button title="Close" onPress={() => setOpen(false)} />
         </View> 
       </Modal>

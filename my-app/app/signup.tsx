@@ -75,23 +75,30 @@ const Signup = () => {
 /> */}
 
     <FlatList 
-      data={[1,2,3,4,5,6,7,8,9,10]}
-      contentContainerStyle={{marginTop:40}}
-      numColumns={3}
-    renderItem={({item})=>{
-      return(
-        <View style={{backgroundColor:'red',  width:100, height:100, margin:12, borderRadius:12, justifyContent:'center', alignItems:'center'}}>
-
-          <Text style={{color:'white', textAlign:'center',}}>{item}</Text>
-
-
-        </View>
-      )
-    }}
+  data={[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,]}
+  contentContainerStyle={{marginTop: 40}}
+  numColumns={3}
+  renderItem={({item}) => { 
     
-    
-    
-    />
+    return (
+      <View style={{
+        backgroundColor: 'blue',
+        width: 100,
+        height: 100,
+        margin: 12,
+        borderRadius: 50,
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}>
+        <Text style={{color: 'white', textAlign: 'center'}}>{item}</Text>
+
+        {/* Blue View inside red box */}
+       
+      </View>
+    )
+  }}
+/>
+
 
          </ScrollView>
   )
@@ -112,14 +119,7 @@ const styles = StyleSheet.create({
     borderRadius:40, borderColor: 'red',
     marginTop:50
   },
-    box: {
-    width: 100,
-    height: 100,
-    backgroundColor: 'red',
-    margin: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
+   
   text: {
     color: '#fff',
     fontSize: 20,
