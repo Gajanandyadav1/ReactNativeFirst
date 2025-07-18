@@ -79,10 +79,10 @@ const Signup = () => {
   contentContainerStyle={{marginTop: 40}}
   numColumns={3}
   renderItem={({item}) => { 
-    
+
     return (
       <View style={{
-        backgroundColor: 'blue',
+        backgroundColor: 'blue' ,
         width: 100,
         height: 100,
         margin: 12,
