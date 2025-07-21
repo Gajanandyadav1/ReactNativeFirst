@@ -12,14 +12,13 @@ const Mybutton = ({title,onPress})  =>  {
 }; 
 export default Mybutton; 
 
-const styles = StyleSheet.create({
-    
+const styles = StyleSheet.create({ 
   button: {
     backgroundColor: 'red',
     width: '100%',
     padding: 10,
     borderRadius: 50,
-    alignItems: 'center', paddingVertical:15, 
+    alignItems: 'center', paddingVertical:15 , 
   },
 
   title:{
