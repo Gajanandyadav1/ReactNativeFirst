@@ -16,6 +16,7 @@ export default Mybutton;
 const styles = StyleSheet.create({ 
   button: {
     backgroundColor: 'red',
+    
     width: '100%',
     padding: 10,
     borderRadius: 50,
