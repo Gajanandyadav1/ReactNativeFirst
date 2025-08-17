@@ -13,6 +13,7 @@ const Mybutton = ({title,onPress})  =>  {
 }; 
 export default Mybutton; 
 
+
 const styles = StyleSheet.create({ 
   button: {
     backgroundColor: 'red',
