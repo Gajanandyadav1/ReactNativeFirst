@@ -9,7 +9,7 @@ const Mybutton = ({title,onPress})  =>  {
   return (
     <View style={styles.main1}>
       
-      <TouchableOpacity style={styles.button} >
+       <TouchableOpacity style={styles.button} >
         <Text style={{ color:  'white' }} onPress={onPress}> {title} </Text>
       </TouchableOpacity>
     </View>
