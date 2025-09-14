@@ -10,7 +10,7 @@ const Mybutton = ({title,onPress})  =>  {
     <View style={styles.main1}>
       
         <TouchableOpacity style={styles.button} >
-        <Text style={{ color:  'white' }} onPress={onPress}> {title} </Text>
+         <Text style={{ color:  'white' }} onPress={onPress}> {title} </Text>
       </TouchableOpacity>
     </View>
   );
