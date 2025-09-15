@@ -5,7 +5,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 
 
-const Mybutton = ({title,onPress})  =>  {
+const Mybutton = ({title,onPress})  =>   {
   return (
     <View style={styles.main1}>
       
